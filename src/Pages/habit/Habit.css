@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 #title{
-    font-size: 1.1rem;
     display: flex;
+    position: absolute;
+    font-size: 2rem;
+    color:green;
+    font-weight: bold;
+}
+#exercise-data{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#submit-data{
+    width:30vw;
+    height: 7rem;
+    background-color: lightseagreen;
+    margin-top: 10px;
 }
