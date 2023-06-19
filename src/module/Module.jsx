@@ -16,14 +16,14 @@ import {
 }
   from '@chakra-ui/react'
 export default function Module() {
-  const { isOpen, onOpen, onClose } = useDisclosure()
+  const { isOpen, onOpen,onClose } = useDisclosure()
  
 
-const {habit,setHabit,addHabit,handleSubmit,handleChange}=useHabit();
+const {handleSubmit,handleChange}=useHabit();
  
   return (
     <>
-      <Button onClick={onOpen} id='post-modal' >Add New</Button>
+      <Button onClick={onOpen} id='submitted-data'style={{color:'white'}}>Add New</Button>
 
       <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />

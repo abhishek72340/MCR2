@@ -4,18 +4,11 @@ const habitContext = createContext();
 
 const HabitProvider = ({ children }) => {
     const [habits, setHabits] = useState([])
-    const [habit, setHabit] = useState({
-
-       
-        thumbnail: "",
+    const [habit, setHabit] = useState({  
         title: "",
         start: "",
         repeat: "",
-        
-       
         goal: ""
-
-
     });
     const addHabit = (habit) => {
         setHabits(prevState => [...prevState, { id: uuid(), ...habit }])
@@ -27,7 +20,7 @@ const HabitProvider = ({ children }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         addHabit(habit);
-        onclose(true)
+        
     }
     return (
 
